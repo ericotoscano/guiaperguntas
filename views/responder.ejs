@@ -1,0 +1,16 @@
+<%- include ('partials/header.ejs') %>
+<body>
+  <%- include ('partials/navbar.ejs') %>
+  <div class="container">
+    <br>
+    <div class="list-group">
+      <button type="button" class="list-group-item list-group-item-action active bg-success border-0" disabled>
+        <h3>O que deseja responder?</h3>
+      </button>
+      <% perguntas.forEach(pergunta => { %>
+        <a href="/pergunta/<%= pergunta.id %>" style="text-decoration:none"><button type="button" class="list-group-item list-group-item-action"><h4><%= pergunta.assunto %></h4></button></a>
+      <% }) %>
+    </div>
+  </div>
+</body>
+<%- include ('partials/footer.ejs') %>

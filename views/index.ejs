@@ -1,0 +1,35 @@
+<%- include ('partials/header.ejs') %>
+
+<body>
+  <%- include ('partials/navbar.ejs') %>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-5 text-center">Bem vindo ao Guia de Perguntas e Respostas!</h1>
+      <p class="lead text-center">Construído com NodeJS, Express, MySQL, BootStrap, EJS, Sequelize e BodyParser</p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+      <div class="row mx-md-n5">
+        <div class="col px-md-5">
+            <div class="card border border-danger text-center">
+              <div class="card-body">
+                <h5 class="card-title">Faça uma pergunta!</h5>
+                <p class="card-text">É fácil e rápido.</p>
+                <a href="perguntar" class="btn btn-danger">Perguntar</a>
+              </div>
+            </div>
+        </div>
+        <div class="col px-md-5">
+            <div class="card border border-success text-center">
+              <div class="card-body">
+                <h5 class="card-title">Escreva uma resposta!</h5>
+                <p class="card-text">Compartilhe conhecimento.</p>
+                <a href="responder" class="btn btn-success">Responder</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  </body>
+<%- include ('partials/footer.ejs') %>
